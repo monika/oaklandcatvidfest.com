@@ -1,0 +1,151 @@
+/////////////////
+/// Typography //
+/////////////////
+
+body {
+	font-family: 'Domine', serif;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'EfonRegular';
+    src: url('http://greatwallofoakland.org/efon/EFON-webfont.eot');
+    src: url('http://greatwallofoakland.org/efon/EFON-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://greatwallofoakland.org/efon/EFON-webfont.woff') format('woff'),
+         url('http://greatwallofoakland.org/efon/EFON-webfont.ttf') format('truetype'),
+         url('http://greatwallofoakland.org/efon/EFON-webfont.svg#EfonRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dock11regular';
+    src: url('http://greatwallofoakland.org/fonts/heavy_dock-webfont.eot');
+    src: url('http://greatwallofoakland.org/fonts/heavy_dock-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://greatwallofoakland.org/fonts/heavy_dock-webfont.woff') format('woff'),
+         url('http://greatwallofoakland.org/fonts/heavy_dock-webfont.ttf') format('truetype'),
+         url('http://greatwallofoakland.org/fonts/heavy_dock-webfont.svg#dock11regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Styles */
+
+/* zocial */
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+[class*="zocial-"]:before {
+
+	font-family: 'zocial', sans-serif;
+
+}
+
+a {
+
+	text-decoration: underline;
+	color: $black;
+
+	&:hover {
+
+		color: $black;
+
+	}
+
+	&.button {
+
+		text-decoration: none;
+		padding: 5px;
+		margin: 3px;
+		white-space: nowrap;
+		border-radius: 2px;
+
+		&:hover {
+
+			@include prefixer(transition, background-color .10s ease-in);
+			@include prefixer(transition, color .10s ease-in);
+
+			background: $black;
+			color: $white;
+
+		}
+
+	}
+
+	&.button-mini {
+
+		font-size: 0.75em;
+		line-height: 1.25em;
+		text-decoration: none;
+		font-weight: bold;
+		background: darken($yellow, 20%);
+		padding: 2px 3px;
+		border-radius: .2em;
+
+		&:hover {
+			background: $black;
+		}
+	}
+}
+
+
+/* Headings */
+
+h1 {
+
+	font-size: 2em;
+	line-height: 1.25;
+
+}
+
+#header {
+
+	h1 {
+
+		text-transform: uppercase;
+		font-family: 'dock11regular';
+		margin: 0 0 10px;
+
+	}
+
+	small {
+
+		text-transform: uppercase;
+
+	}
+
+}
+
+p + h2.headline { margin-top: 40px !important; }
+
+h2 {
+
+	font-size: 1.5em;
+	line-height: 1.25;
+
+}
+
+h3 {
+
+	font-size: 1.25em;
+	line-height: 1.15;
+	margin-top: 40px;
+	display: block;
+
+}
+
+h4 {
+
+	font-size: 1.15em;
+	line-height: 1;
+
+}
+
+div[class*="col-"] > .headline {
+
+	margin-top: 0;
+
+	}

@@ -1,0 +1,67 @@
+#page-sponsors .content {
+
+	#sponsors {
+
+		h2 {
+
+			clear: both;
+			color: $blue;
+
+		}
+
+		ul {
+
+			@include reset("list");
+			@include clearfix();
+
+			display: table;
+			width: 100%;
+			margin: 0 0 30px 0;
+
+			&.single { display: block; }
+
+			li {
+
+				display: table-cell;
+				padding: 0 2%;
+				text-align: center;
+				vertical-align: middle;
+
+			}
+
+			@media only screen and (max-width: 479px) {
+
+				display: block;
+
+				li {
+
+					display: block;
+					padding: 2%;
+					text-align: left;
+
+				}
+
+			}
+
+
+		}
+
+		a {
+
+			display: block;
+
+			&.button { display: inline-block; }
+
+			img {
+
+				display: inline-block;
+				vertical-align: middle;
+				max-width: 100%;
+
+			}
+
+		}
+
+	}
+
+}

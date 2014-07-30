@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>   <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>      <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>      <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Oakland Internet Cat Video Festival - May 10, 2014 - Presented by The Great Wall of Oakland</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="google-site-verification" content="WKsd9OFgs1r7sbZeXyvYnKg0kSBwl0XfzCwB4XHLFFc" />
+
+    {{{ assets.favicon }}}
+    {{{ assets.stylesheets }}}
+    {{{ assets.javascripts }}}
+
+	{{> Libraries/Fonts }}
+	{{> Libraries/Open Graph }}
+	{{> Libraries/Twitter Card }}
+	{{> Libraries/Google Analytics }}
+
+
+</head>
+<body id="page-{{page.permanent_name}}">
+
+	<div class="layout">
+
+		<header id="header">
+
+			<div class="col-6-10">
+
+				<div class="logo">
+
+					<img class="cat" src="http://greatwallofoakland.org/images/le_chat.png" alt="Alley Cat">
+
+				</div>
+
+				<div class="info">
+
+					<p><em>The Great Wall of Oakland presents</em></p>
+
+					<h1>Save A Kitten at OakCatVidFest</h1>
+					<h2>Saturday, May 10, 2014</h2>
+
+				</div>
+
+			</div>
+
+			{{> Modules/Navigation }}
+
+		</header>
+
+    	<section id="content" class="col-10-10 content">
+
+			{{{ page.markup }}}
+
+			{{! Modules/Contact }}
+			{{> Modules/Presenters }}
+
+		</section>
+
+		{{> Modules/Footer }}
+
+	</div>
+
+</body>
+</html>

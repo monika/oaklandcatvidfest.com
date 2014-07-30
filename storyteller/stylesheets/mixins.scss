@@ -1,0 +1,81 @@
+/////////////////
+/// Mixins //
+/////////////////
+
+/* Reset */
+
+@mixin reset($element: base) {
+
+	margin: 0;
+	padding: 0;
+
+	@if $element == button {
+
+		outline: none;
+		border: 0;
+
+		&::-moz-focus-inner {
+			border: 0;
+		}
+
+		-webkit-appearance: none;
+
+	} @else if $element == link {
+
+		outline: none;
+		text-decoration: none;
+
+		img {
+			border: 0;
+		}
+
+	} @else if $element == list {
+
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		> li {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+	} @else if $element == definition-list {
+
+		dt, dd {
+
+			margin: 0;
+			-webkit-margin-start: 0;
+
+		}
+
+	}
+
+}
+
+/* Clearfix */
+@mixin clearfix() {
+
+    *zoom:1;
+    &:before,
+    &:after {
+        content:"";
+        display:table;
+    }
+
+    &:after {
+        clear:both;
+    }
+}
+
+/* Browser Prefixer */
+@mixin prefixer($property, $value) {
+
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+
+}

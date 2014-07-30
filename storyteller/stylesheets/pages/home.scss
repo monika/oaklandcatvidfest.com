@@ -1,0 +1,97 @@
+#page-home {
+
+	#header {
+
+		padding: 1.5em;
+
+		img {
+
+			display: block;
+			float: none;
+			margin: 0 auto;
+			width: auto;
+
+			&.gwo {
+
+				padding: 0 0 0.5em;
+
+				+ p { margin: 0; }
+
+			}
+
+			&.cat { padding: 0 0 1em 0; }
+
+		}
+
+		a.button {
+
+			background: $black;
+			color: darken($yellow, 20%);
+			text-shadow: none;
+
+		}
+
+		@media only screen and (max-width : 479px) {
+
+			img.gwo { display: none; }
+
+		}
+
+	}
+
+	#content {
+
+		div li {
+
+			margin-bottom: 10px;
+
+		}
+
+		iframe + small {
+
+			display: block;
+
+		}
+
+		#tickets img {
+
+			display: block;
+			border: 4px solid darken($blue, 10%);
+
+		}
+
+		#faq h2 {
+
+			font-size: 1em;
+			padding: 1em;
+			margin-bottom: 0.5em;
+			cursor: pointer;
+			background: rgba(255,255,255,0.1);
+
+			&:hover {
+
+				@include prefixer(transition, background-color .10s ease-in);
+				background: rgba(255,255,255,0.2);
+
+			}
+
+			& + p { margin-top: 0; }
+
+		}
+
+		#map {
+
+			img {
+
+				max-width: 100%;
+				border: 5px solid darken($yellow, 10%);
+
+			}
+
+			a:hover img { border-color: darken($yellow, 30%); }
+
+		}
+
+	}
+
+}

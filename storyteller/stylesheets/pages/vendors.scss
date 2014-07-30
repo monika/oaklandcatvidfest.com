@@ -1,0 +1,74 @@
+#page-vendors .content {
+
+	#vendors {
+
+		.more-info { padding: 0 0 20px; }
+
+		.forms {
+
+			.form {
+
+				border-top: 2px solid lighten($green, 10%);
+
+			}
+
+			label {
+
+				display: block;
+				clear: both;
+				float: left;
+				width: 38%;
+				margin-right: 2%;
+				margin-bottom: 10px;
+
+				& + input,
+				& + select {
+
+					display: block;
+					float: left;
+					width: 60%;
+					margin-bottom: 10px;
+
+				}
+
+			}
+
+			input {
+
+				&[type="image"] {
+
+					display: block;
+					clear: both;
+					margin-top: 10px;
+
+				}
+
+			}
+
+		} /* .forms */
+
+		@media only screen and (max-width: 720px) {
+
+			.form {
+
+				label {
+
+				display: block;
+				width: 100%;
+
+				& + input {
+
+					display: block;
+					width: auto;
+
+				}
+
+			}
+
+			}
+
+		}
+
+	} /* #vendors */
+
+} /* #page-vendors .content */

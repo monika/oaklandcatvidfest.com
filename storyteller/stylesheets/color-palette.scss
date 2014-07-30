@@ -1,0 +1,92 @@
+/* Colors */
+
+$white: #ffffff;
+$black: #000000;
+$green: #27495C;
+$blue: #8edbfd;
+$yellow: #f7d690;
+$red: #e26663;
+$brown: #e9e3d1;
+$brown-dark: #b8b19f;
+
+/* Container Colors */
+#content {
+
+	div[class*="col-"]:first-of-type {
+
+		background: $green url('bg-cat-one.jpg') no-repeat bottom right;
+
+		color: $white;
+
+		a {
+
+			color: $blue;
+
+			&.button {
+
+				color: $white;
+				background: lighten($green, 10%);
+
+				&:hover {
+
+					color: $white;
+					background: $black;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	div[class*="col-"]:nth-of-type(3n+2) {
+
+		background: $blue url('bg-cat-three.jpg') no-repeat bottom right;
+		color: darken($blue, 50%);
+
+		.button {
+
+			background: darken($blue, 10%);
+
+			&:hover { background: $black; }
+
+		}
+
+	}
+
+	div[class*="col-"]:nth-of-type(3n) {
+
+		background: $yellow url('bg-cat-two.jpg') no-repeat bottom left;
+
+		.button {
+
+			background: darken($yellow, 20%);
+
+			&:hover { background: $black; }
+
+		}
+
+	}
+
+	div[class*="col-"]:nth-of-type(3n+4) {
+
+		background: $red;
+
+		.button {
+
+			background: darken($red, 10%);
+
+			&:hover { background: $black; }
+
+		}
+
+	}
+
+	div[class*="col-"]:last-of-type {
+
+		background: $brown;
+
+	}
+
+}

@@ -1,0 +1,26 @@
+#footer {
+
+	clear: both;
+	font-size: 0.75em;
+	text-align: center;
+	color: $brown-dark;
+	position: relative;
+	padding-top: 0;
+
+	.social {
+
+		margin-left: -190px;
+
+		.twitter-share-button {
+
+			top: 0;
+			left: 220px;
+
+		}
+	}
+
+	a { color: $brown-dark;	}
+
+	span { margin: 0 5px; }
+
+}

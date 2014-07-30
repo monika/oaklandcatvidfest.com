@@ -1,0 +1,66 @@
+#presenters {
+
+	background: $brown;
+	text-align: center;
+	font-size: 0.75em;
+	color: darken($brown, 50%);
+
+	ul.sponsors {
+
+		@include reset("list");
+		width: 70%;
+		margin: 0 auto;
+
+		li.sponsor {
+
+			display: inline-block;
+			margin-bottom: 10px;
+
+			a.button {
+
+				background-color: darken($brown, 10%);
+
+				&:hover { background-color: $black}
+
+			}
+
+		}
+
+	}
+
+	h2, h3 {
+
+		display: block;
+		margin: 0 auto;
+		font-size: 1em;
+		font-weight: normal;
+	}
+
+	h3 { padding: 2em 0 1em; }
+
+	p {
+		text-align: center;
+
+		a.logo {
+
+			display: inline-block;
+			text-indent: -5000px;
+			padding: 0;
+
+			&.gwo {
+				width: 100px;
+				height: 50px;
+				background: url('presenters.png') no-repeat top left;
+				box-sizing: content-box;
+			}
+
+			&.walker {
+				width: 100px;
+				height: 50px;
+				background: url('presenters.png') no-repeat bottom right;
+				text-indent: -5000px;
+
+			}
+		}
+	}
+}

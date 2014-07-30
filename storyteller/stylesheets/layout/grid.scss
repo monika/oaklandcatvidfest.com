@@ -1,0 +1,81 @@
+/////////////////
+/// Kitty Grid //
+/////////////////
+
+ *, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+
+	background: #fef9ef;
+}
+
+.layout {
+
+	@include clearfix();
+
+	@media only screen and (min-width: 979px) {
+		.col-10-10 { width: 100%; }
+		.col-6-10 { width: 60%; max-width: 750px; }
+	}
+
+	@media only screen and (min-width: 651px) and (max-width: 979px) {
+		.col-10-10 { width: 100%; }
+		.col-6-10 { width: 80%; max-width: 750px; }
+	}
+
+	@media only screen and (min-width: 480px) and (max-width: 650px) {
+
+		.col-10-10 {
+
+			width: 100%;
+			padding: 40px 0;
+
+			&.background { padding: 0; }
+
+		}
+
+		.col-6-10 {
+
+			width: 90%;
+			padding: 20px;
+			max-width: 600px;
+
+		}
+	}
+
+	@media only screen and (max-width : 479px) {
+
+		.col-10-10 {
+
+			width: 100%;
+			padding: 0;
+
+		}
+
+		.col-6-10 {
+
+			width: 100%;
+			padding: 20px;
+
+		}
+
+	}
+
+}
+
+[class*='col-'] {
+
+	@include clearfix();
+	margin: 0 auto;
+	padding: 40px;
+
+}
+
+section {
+	width: 100%;
+	clear: both;
+}

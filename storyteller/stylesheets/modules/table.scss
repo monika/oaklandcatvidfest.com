@@ -1,0 +1,43 @@
+table {
+
+	caption {
+
+		padding-bottom: 10px;
+		color: $blue;
+		text-align: left;
+		font-size: 1.25em;
+		border-bottom: 1px solid #246C84;
+
+	}
+
+	tfoot td {
+
+		background: #246C84;
+		font-size: .9em;
+
+	}
+
+	td {
+
+		padding: 10px;
+		border-bottom: 1px solid #246C84;
+
+		&.time {
+
+			white-space: nowrap;
+			vertical-align: top;
+
+		}
+
+		small {
+
+			color: lighten($green, 30%);
+			display: block;
+			clear: left;
+			line-height: 1.2em;
+			margin-top: 10px;
+
+		}
+	}
+
+}

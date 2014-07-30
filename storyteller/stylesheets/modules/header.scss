@@ -1,0 +1,84 @@
+#header {
+
+	@include clearfix();
+	background: #dda52d url('bg-header.jpg') center center;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+	h1 { margin: 0; }
+	h2 { margin: 0 0 0.5em 0; }
+
+	.logo {
+
+		float: left;
+		width: 40%;
+		padding-right: 1.5em;
+
+		img {
+
+			float: right;
+			width: 75%;
+			margin: 0;
+
+		}
+
+	}
+
+	.info {
+
+		float: right;
+		width: 60%;
+		text-align: left;
+		//margin-top: 5%;
+
+	}
+
+	p {
+
+		color: #000;
+		margin: 0;
+
+		em {
+
+			font-size: 0.7em;
+			line-height: 1;
+			text-transform: uppercase;
+
+		}
+
+	}
+
+	@media only screen and (min-width: 651px) and (max-width: 979px) {}
+
+	@media only screen and (max-width: 650px) {
+
+		h1 { font-size: 1.5em; }
+		h2 { font-size: 1.25em; }
+
+		p { display: none; }
+
+		.logo {
+
+			width: 25%;
+
+			img { width: 100%; }
+
+		}
+
+		.info {
+
+			margin-top: 2%;
+			width: 75%;
+
+		}
+
+	}
+
+	@media only screen and (max-width : 479px) {
+
+		.info { margin-top: 0; }
+
+	}
+
+}

@@ -1,0 +1,61 @@
+#navigation {
+
+	@include reset("list");
+	@include clearfix();
+
+	padding: 1em 0;
+	text-align: center;
+	background: darken($green, 5%);
+
+	li {
+
+		display: inline-block;
+
+		a {
+
+			display: block;
+			color: darken($yellow, 20%);
+			text-decoration: none;
+
+			&:hover {
+
+				background-color: darken($yellow, 30%);
+				color: $white;
+
+			}
+
+		}
+
+	}
+
+}
+
+/* Sticky Naviation */
+@media only screen and (min-width: 651px) {
+
+	.navigation.sticky {
+
+		box-shadow: 0 2px 0 rgba(0,0,0,0.35);
+
+		position: fixed;
+		top: 0;
+		left: 0;
+
+	}
+
+}
+
+
+/* Current Page Highlight */
+#page-home #navigation a.home,
+#page-schedule #navigation a.schedule,
+#page-screening #navigation a.screening,
+#page-vendors #navigation a.vendors,
+#page-sponsors #navigation a.sponsors,
+#page-about #navigation a.about,
+#page-adoptions #navigation a.adoptions {
+
+	background-color: darken($yellow, 30%);
+	color: $white;
+
+}
